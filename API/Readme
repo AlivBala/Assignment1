@@ -1,6 +1,24 @@
+
+
+# Protractor-Jasmine framework
+
+A sample project for Cucumber and/or Selenium tests.
+
+# Instructions
+
+Clone the repo:
+
+Git:
+```
+$ git clone git@github.com:testdouble/java-cucumber-example.git
+```
+
+## Prerequisites
 run the install.sh to install npm and webdriver
 
-#command to run the test 
-npm run tsc
+## To execute test
 
+Open a command window OR GitBash from FOLDER "API" and run below command to run test:
+
+   npm run test
 
