@@ -1,0 +1,6 @@
+run the install.sh to install npm and webdriver
+
+#command to run the test 
+npm run tsc
+
+
