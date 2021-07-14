@@ -3,6 +3,7 @@ var frisby = require('frisby');
 var usercount = 0;
 var expecing_UserNames = ['Darth Vader', 'Chewbacca', 'Roos Tarpals', 'Rugor Nass', 'Yarael Poof',
     'Lama Su', 'Tuan Wu', 'Grievous', 'Tarfful', 'Tion Medon']
+    
 describe("Validate the Star wars API", function () {
     it('get the User details from Star wars API', function (done) {
         frisby.get('https://swapi.dev/api/people')
