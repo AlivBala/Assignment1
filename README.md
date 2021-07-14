@@ -1,1 +1,2 @@
-# This repo have framework for both UI and API
+# this one have 2 different frame works for UI (Protractor and Cucumber) and API (Protractor and Jasmine)
+
