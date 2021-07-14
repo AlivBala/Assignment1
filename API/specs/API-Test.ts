@@ -12,13 +12,14 @@ describe("Validate the Star wars API", function () {
                 expect(res.status).toEqual(200, { "emsg": res.status + "expected to be 200", "estack": res._body })
                 for (var i = 0; i < res._body.results.length; i++) {
                     if (res._body.results[i].height > 200) {
-                        usercount = res._body.results.length
                         userNames.push(res._body.results[i].name)
                         userNames.sort()
                     }
                 }
-                expect(usercount).toBe(10, { "emsg": "Users count:" + usercount + "expected to be 10", "estack": res._body })
-                expect(userNames).toContain(expecing_UserNames, { "emsg": "Usernames: " + userNames + "should be match with : " + expecing_UserNames, "estack": res._body })
+            // there is only one person that where height is greater than 200 and the count will be 1 if it's more than or less than 1 this below step will fail
+//             and there will be one name retun when it matched the above requirement(height<200)
+                expect(userNames.length).toBe(11, { "emsg": "Users count:" + usercount + "expected to be 1", "estack": res._body })
+              expect(userNames).toContain(Darth Vader, { "emsg": "Usernames: " + userNames + "should be match with : " + Darth Vader, "estack": res._body })
             })
             .done(done)
     });
